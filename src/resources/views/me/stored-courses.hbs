@@ -140,14 +140,6 @@
             renderCheckAllSubmitBtn();
         })
 
-        {{!-- //Check all submit btn clicked 
-        containerForm.on('submit', function(e) {
-            var isSubmitable = !checkAllSubmitBtn.hasClass('disabled')
-            if (!isSubmitable) {
-                e.preventDefault();
-            }
-        }) --}}
-
         //Re-render check all submit button
         function renderCheckAllSubmitBtn() {
             var checkedCount = $('input[name="courseIds[]"]:checked').length;
